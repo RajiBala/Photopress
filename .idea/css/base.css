@@ -1,0 +1,108 @@
+
+.wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+.nopadding{
+  padding: 0px;
+}
+.footer {
+  background-color: black;
+  }
+
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    color: orange;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic,bold;
+    font-size: 100%
+}
+
+h2 {
+    color: orange;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic,bold;
+    font-size: 200%
+}
+
+.para1{
+  color: orange;
+    font-family: "Times New Roman";
+    font-size: 200%;
+}
+.para2{
+  color: blue;
+  font-size:300%;
+}
+h6 span 
+{ 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+}
+
+.rcorners {
+    border: 2px solid #E4E4E4;
+    padding: 20px;
+    width: 100%;
+    height: 75px;
+}
+.rcorners1 {
+    border: 2px solid #E4E4E4;
+    border-top: 0px !important;
+    padding: 20px;
+    width: 50%;
+    height: 150px;
+}
+.rcorners2 {
+    border: 2px solid #E4E4E4;
+    border-top: 0px !important;
+    border-left:0px !important;
+    padding: 20px;
+    width: 50%;
+    height: 150px;
+}
+
+.bottonsp2{
+  color:#000;
+  background-color:white;
+  border-color:#E4E4E4
+}
+
+.paddng{
+  width-
+}
+
+.tabfont{
+  background: #fefefe !important;
+  border-color:#dedede !important;
+  width:10px !important;
+  border-width: .4pt !important;
+  border-radius: 6px !important;
+  color:#919191 !important;
+  font-family: Proxima Nova SemiBold !important;
+  font-size: 12px;
+}
+.activetab{
+  background: #f9b530 !important;
+  border-color:#dedede !important;
+  width:10px !important;
+  border-width: .4pt !important;
+  border-radius: 6px !important;
+  font-color:#891a1d !important;
+  font-family: Proxima Nova SemiBold !important;
+  font-size: 12px;
+}

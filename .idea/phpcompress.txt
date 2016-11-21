@@ -1,0 +1,65 @@
+<?PHP
+ function imagecrop($img_name,$newname,$type,$modwidth,$modheight)
+{
+ 
+	list($width, $height) = getimagesize($img_name) ; //get width & height in array list
+ 
+    $tn = imagecreatetruecolor($modwidth, $modheight); 
+	if(!strcmp("image/png",$type))
+	{
+	imagealphablending($tn, false); //For transparent BackGround
+	imagesavealpha($tn, true);  
+	}
+ 
+ 
+ 
+   if(!strcmp("image/jpg",$type) || !strcmp("image/jpeg",$type) || !strcmp("image/pjpeg",$type))
+        $src_img=imagecreatefromjpeg($img_name);
+ 
+    if(!strcmp("image/png",$type))
+        $src_img=imagecreatefrompng($img_name);
+ 
+    if(!strcmp("image/gif",$type))
+        $src_img=imagecreatefromgif($img_name);
+ 
+          imagecopyresampled($tn, $src_img, 0, 0, 0, 0, $modwidth, $modheight, $width, $height) ; 
+ 
+ 
+   if(!strcmp("image/png",$type))  
+   {
+   imagesavealpha($src_img, true);
+   $ok=imagepng($tn,$newname);
+   }
+   else if(!strcmp("image/gif",$type))  
+   {
+   $ok=imagegif($tn,$newname);
+   }
+   else 
+   {
+   $ok=imagejpeg($tn,$newname);
+   }
+ 
+if($ok==1)
+  {
+return "<img src=".$_FILES['image']['name']." border='0'>";
+  }
+} 
+ 
+if(isset($_POST['Resize']))
+{
+// imagecrop(Upload Image tmp_path,Upload Image store path,Upload Image type,resize width,resize height);
+echo imagecrop($_FILES['image']['tmp_name'],$_FILES['image']['name'],$_FILES['image']['type'],650,250);
+}
+ 
+?>
+<form enctype="multipart/form-data" method="post" action="<?PHP $_SERVER['SELF'];?>">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="10%">Upload Image : </td>
+    <td width="24%">
+      <input type="file" name="image" />    </td>
+    <td width="66%"><input type="submit" name="Resize" value="Submit" /></td>
+  </tr>
+</table>
+</form>
+ 

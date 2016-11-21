@@ -1,0 +1,136 @@
+body {
+    background-color:#f6f5f5;
+    border:#e6e3e3;
+}
+
+.nopadding{
+  padding: 0px;
+}
+
+.btnpadding{
+	padding:25px;
+	padding-right: 25px; 
+	padding-top: 5px;
+	padding-bottom: 5px
+}
+
+.bottonsp2{
+  color:#919191;
+  background-color:#fefefe;
+  border-color:#dedede; 
+  border-width :0.3pt
+}
+
+h4{
+	color:#a1a2a7 !important;
+	font-family:Proxima Nova Semibold !important;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+h5{
+	color:#8a8a8a !important;
+	font-family:Proxima Nova Regular !important;
+	font-size: 12px !important;
+}
+
+
+.ddtext{
+	background-color:#fefefe;
+	border-color:#dedede;
+	border-width:.3pt;
+	color:#919191;
+	font-family:Proxima Nova Regular;
+	font-size: 11px;
+}
+
+.tableheader{
+	background:#ffffff;
+	border-color:#0f2b3b;
+	border-width:3pt;
+	color:#0f2b3b; 
+	font-family:Roboto Bold Condensed;
+	font-size: 12px;
+}
+
+.raw1{
+	background:#ffffff;
+	border-color:#dbdbdb;
+	border-width: 0.5pt;
+	color:#9b9ea0; 
+	font-family:Roboto Bold;
+	font-size: 12px;
+}
+
+.raw2{
+	background:#f9f9f9;
+	border-color:#dbdbdb;
+	border-width: 0.5pt;
+	color:#a2a5a7; 
+	font-family:Roboto Bold;
+	font-size: 12px;
+}
+
+.btnfont{
+	background: #fefefe !important;
+	border-color:#dedede !important;
+	border-width: .4pt !important;
+	border-radius: 6px !important;
+	color:#919191 !important;
+	font-family: Proxima Nova SemiBold !important;
+	font-size: 12px;
+}
+
+.footerfont{
+	  color:red !important;
+	  background:#f6f5f5 !important;
+	  font-family: Proxima Nova Regular !important;
+	  font-size: 9px !important;
+	  height:8px !important;
+
+}
+
+.nav > li {
+  border-color:#dedede !important;
+  width:20px !important;
+  border-width: .4pt !important;
+  border-radius: 6px !important;
+}
+
+.nav > li > a {
+  background-color:#fefefe;
+  color:#919191 !important;
+  font-family: Proxima Nova SemiBold !important;
+  font-size: 12px;
+}
+
+.nav > li >a:hover{
+	background-color: #f9b530;
+	color:#891a1d !important;
+}
+
+.nav > li >a:focus{
+	background-color: #f9b530;
+	color:#891a1d !important;
+}
+
+.rcorners {
+    border: 2px solid #E4E4E4;
+    padding: 20px;
+    width: 85%px;
+    height: 75px;
+}
+.rcorners1 {
+    border: 2px solid #E4E4E4;
+    border-top: 0px !important;
+    padding: 20px;
+    width: 42.5%;
+    height: 150px;
+}
+.rcorners2 {
+    border: 2px solid #E4E4E4;
+    border-top: 0px !important;
+    border-left:0px !important;
+    padding: 20px;
+    width:41%;
+    height: 150px;
+}
